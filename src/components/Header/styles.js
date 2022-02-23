@@ -16,17 +16,10 @@ export const useStyles = makeStyles(theme => ({
         padding: '.7rem 24px',
         [theme.breakpoints.up('sm')]: {
             fontSize: '.83rem',
-            marginRight: '1.5rem',
+            marginRight: '1.8rem',
             padding: '.3rem 0',
             '&:last-child': {
                 marginRight: 0
-            },
-            '& a': {
-                color: '#333136',
-                transition: 'all 1s ease-in-out',
-                '&:hover': {
-                    textDecoration: 'underline',
-                }
             }
         }
     },
@@ -37,7 +30,6 @@ export const useStyles = makeStyles(theme => ({
         }
     },
     drawerPaper: {
-        backgroundColor: '#979797 !important',
         height: 'auto !important',
         top: '64px !important',
         width: '85%'
