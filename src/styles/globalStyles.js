@@ -40,5 +40,10 @@ export const useGlobalStyles = makeStyles(theme => ({
     },
     veryLightGreyBg: {
         backgroundColor: '#FAFAFA'
+    },
+    svgCurrentColor: {
+        '& path': {
+            fill: 'currentcolor !important'
+        }
     }
 }));

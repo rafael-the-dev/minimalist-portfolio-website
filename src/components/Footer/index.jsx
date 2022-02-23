@@ -11,9 +11,12 @@ const Footer = () => {
     const globalStyles = useGlobalStyles();
 
     return (
-        <footer className={classNames(globalStyles.px, `bg-blue-500 py-8 flex flex-col items-center`)}>
+        <footer className={classNames(globalStyles.px, `bg-blue-500 py-12 flex flex-col items-center`)}>
             <div>
-                <nav>
+                <Link to="/" className={classNames('flex justify-center')}>
+                    <Logo className={classNames(globalStyles.svgCurrentColor, `text-white`)} />
+                </Link>
+                <nav className={classNames('mt-6')}>
                     <ul className={classNames(`text-white flex flex-col items-center`)}>
                         <li className={classNames(`mb-3`)}>
                             <Link to="/" className={classNames('uppercase text-center')}>Home</Link>
