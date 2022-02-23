@@ -3,6 +3,24 @@ module.exports = {
     "./src/**/*.{html,js,jsx,ts,tsx}"
   ],
   theme: {
+    extend: {
+      colors: {
+        red: {
+          500: '#F43030'
+        },
+        cyan: {
+          700: '#5FB4A2'
+        },
+        blue: {
+          500: '#33323D',
+          700: '#203A4C'
+        },
+        grey: {
+          400: '#FAFAFA',
+          500: '#EAEAEB'
+        }
+      }
+    },
     screens: {
       'sm': '600px',
       // => @media (min-width: 640px) { ... }
