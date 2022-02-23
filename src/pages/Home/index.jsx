@@ -11,7 +11,7 @@ const Home = () => {
     
     return (
         <main>
-            <h1>Hello</h1>
+            <h1 className={classNames('text-2xl')}>Hello</h1>
         </main>
     )
 };

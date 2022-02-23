@@ -7,7 +7,7 @@ const App = () => {
     const theme = createTheme();
 
     const HomePage = loadable(() => import(/* webpackChunkName: "HomePage" */ '../Home'));
-    //const Header = loadable(() => import(/* webpackChunkName: "Header" */ '../../components/Header'));
+    const Header = loadable(() => import(/* webpackChunkName: "Header" */ '../../components/Header'));
     //const Footer = loadable(() => import(/* webpackChunkName: "Footer" */ '../../components/Footer'));
 
     return (
@@ -15,6 +15,7 @@ const App = () => {
             <StylesProvider injectFirst>
                 <ThemeProvider theme={theme}>
                     <Router>
+                        <Header />
                         <Routes>
                             <Route exact path="/" element={<HomePage />} />
                         </Routes>
