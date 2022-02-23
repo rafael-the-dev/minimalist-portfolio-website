@@ -8,7 +8,7 @@ const App = () => {
 
     const HomePage = loadable(() => import(/* webpackChunkName: "HomePage" */ '../Home'));
     const Header = loadable(() => import(/* webpackChunkName: "Header" */ '../../components/Header'));
-    //const Footer = loadable(() => import(/* webpackChunkName: "Footer" */ '../../components/Footer'));
+    const Footer = loadable(() => import(/* webpackChunkName: "Footer" */ '../../components/Footer'));
 
     return (
         <>
@@ -19,6 +19,7 @@ const App = () => {
                         <Routes>
                             <Route exact path="/" element={<HomePage />} />
                         </Routes>
+                        <Footer />
                     </Router>
                 </ThemeProvider>
             </StylesProvider>
