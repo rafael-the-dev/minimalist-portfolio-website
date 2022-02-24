@@ -17,7 +17,7 @@ const Home = () => {
                     className={classNames(classes.heroIllustration, `bg-cover bg-no-repeat bg-center`)}>
                 </div>
                 <div className={classNames(classes.heroContent, `flex flex-col py-6 sm:absolute sm:bottom-0 
-                    sm:left-0 sm:bg-white sm:pr-8`)}>
+                    sm:left-0 sm:bg-white sm:pr-8 md:py-8`)}>
                     <Typography 
                         className={classNames(`font-bold text-blue-500 text-3xl`)}
                         component="h1">
