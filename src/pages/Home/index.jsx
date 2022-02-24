@@ -36,20 +36,22 @@ const Home = () => {
                         component="h1">
                         Hey, I’m Alex Spencer and I love building beautiful websites
                     </Typography>
-                    <Link 
+                    <a 
                         className={classNames(classes.heroLink, `uppercase text-slate-50 bg-blue-700 flex 
                         items-center mt-6`)}
-                        to="/" >
+                        href="#about-me" >
                         <span 
                             aria-label='arrow icon'
                             className={classNames(classes.heroLinkIcon, `bg-no-repeat bg-center`)}>
                         </span>
                         <span className={classNames(`grow text-center`)}>About me</span>
-                    </Link>
+                    </a>
                 </div>
             </section>
-            <section className={classNames(`py-16 sm:flex sm:items-stretch sm:justify-between md:justify-start
-                md:py-20 lg:py-32`)}>
+            <section 
+                className={classNames(`py-16 sm:flex sm:items-stretch sm:justify-between md:justify-start
+                md:py-20 lg:py-32`)}
+                >
                 <Hidden smUp>
                     <Image src={heroIllustrationImage} />
                 </Hidden>
@@ -59,8 +61,10 @@ const Home = () => {
                 <Hidden mdDown>
                     <Image src={heroIllustrationDesktopImage} />
                 </Hidden>
-                <div className={classNames(classes.aboutMeContent, `py-8 border-y border-solid sm:flex 
-                    sm:flex-col sm:justify-center`)}>
+                <div 
+                    className={classNames(classes.aboutMeContent, `py-8 border-y border-solid sm:flex 
+                    sm:flex-col sm:justify-center`)}
+                    id="about-me">
                     <Hidden smUp>
                         <Divider className={classNames(classes.aboutMeDivider, `bg-blue-500 opacity-50`)} />
                     </Hidden>
