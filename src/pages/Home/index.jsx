@@ -3,7 +3,7 @@ import { useStyles } from './styles'
 import { useGlobalStyles } from '../../styles'
 import { Link } from 'react-router-dom'
 import { useCallback } from 'react';
-import { Hidden, Typography } from '@mui/material';
+import { Divider, Hidden, Typography } from '@mui/material';
 import heroIllustrationImage from '../../assets/images/homepage/mobile/image-homepage-profile.jpg'
 
 const Home = () => {
@@ -50,6 +50,26 @@ const Home = () => {
                 <Hidden smUp>
                     <Image src={heroIllustrationImage} />
                 </Hidden>
+                <div className={classNames(`py-8`)}>
+                    <Divider className={classNames(classes.aboutMeDivider, `bg-blue-500 opacity-50`)} />
+                    <Typography 
+                        className={classNames(`font-bold text-blue-500 text-3xl mt-6`)}
+                        component="h2">
+                        About me
+                    </Typography>
+                    <Typography 
+                        className={classNames(`text-sm leading-7 text-blue-500 mt-4`)}
+                        component="p">
+                        I’m a junior front-end developer looking for a new role in an exciting company. 
+                        I focus on writing accessible HTML, using modern CSS practices and writing 
+                        clean JavaScript. When writing JavaScript code, I mostly use React, 
+                        but I can adapt to whatever tools are required. I’m based in London, 
+                        UK, but I’m happy working remotely and have experience in remote teams. 
+                        When I’m not coding, you’ll find me outdoors. I love being out in 
+                        nature whether that’s going for a walk, run or cycling. I’d love you to 
+                        check out my work.
+                    </Typography>
+                </div>
             </section>
         </main>
     )
