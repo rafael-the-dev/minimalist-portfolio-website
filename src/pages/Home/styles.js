@@ -36,6 +36,22 @@ export const useStyles = makeStyles(theme => ({
     },
     aboutMeImageContainer: {
         //height: 270
+        [theme.breakpoints.up('sm')]: {
+            width: 250
+        },
+        [theme.breakpoints.up(724)]: {
+            width: 289
+        }
+    },
+    aboutMeContent: {
+        [theme.breakpoints.up('sm')]: {
+            borderColor: 'rgb(51 50 61 / .4)',
+            width: 250
+        },
+        [theme.breakpoints.up(679)]: {
+            flexGrow: 1,
+            marginLeft: '4rem'
+        }
     },
     aboutMeDivider: {
         height: 1

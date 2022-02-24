@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 import { useCallback } from 'react';
 import { Button, Divider, Hidden, Typography } from '@mui/material';
 import heroIllustrationImage from '../../assets/images/homepage/mobile/image-homepage-profile.jpg'
+import heroIllustrationTabletImage from '../../assets/images/homepage/tablet/image-homepage-profile.jpg'
+import heroIllustrationDesktopImage from '../../assets/images/homepage/desktop/image-homepage-profile.jpg'
 
 const Home = () => {
     const classes = useStyles();
@@ -46,14 +48,23 @@ const Home = () => {
                     </Link>
                 </div>
             </section>
-            <section className={classNames(`py-16`)}>
+            <section className={classNames(`py-16 sm:flex sm:items-stretch sm:justify-between`)}>
                 <Hidden smUp>
                     <Image src={heroIllustrationImage} />
                 </Hidden>
-                <div className={classNames(`py-8`)}>
-                    <Divider className={classNames(classes.aboutMeDivider, `bg-blue-500 opacity-50`)} />
+                <Hidden mdUp smDown>
+                    <Image src={heroIllustrationTabletImage} />
+                </Hidden>
+                <Hidden mdDown>
+                    <Image src={heroIllustrationDesktopImage} />
+                </Hidden>
+                <div className={classNames(classes.aboutMeContent, `py-8 border-y border-solid sm:flex 
+                    sm:flex-col sm:justify-center`)}>
+                    <Hidden smUp>
+                        <Divider className={classNames(classes.aboutMeDivider, `bg-blue-500 opacity-50`)} />
+                    </Hidden>
                     <Typography 
-                        className={classNames(`font-bold text-blue-500 text-3xl mt-6`)}
+                        className={classNames(`font-bold text-blue-500 text-3xl mt-6 sm:mt-0`)}
                         component="h2">
                         About me
                     </Typography>
