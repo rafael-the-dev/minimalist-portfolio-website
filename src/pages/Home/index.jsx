@@ -3,7 +3,7 @@ import { useStyles } from './styles'
 import { useGlobalStyles } from '../../styles'
 import { Link } from 'react-router-dom'
 import { useCallback } from 'react';
-import { Divider, Hidden, Typography } from '@mui/material';
+import { Button, Divider, Hidden, Typography } from '@mui/material';
 import heroIllustrationImage from '../../assets/images/homepage/mobile/image-homepage-profile.jpg'
 
 const Home = () => {
@@ -69,6 +69,15 @@ const Home = () => {
                         nature whether that’s going for a walk, run or cycling. I’d love you to 
                         check out my work.
                     </Typography>
+                    <Link 
+                        className={classNames(`mt-4 inline-block`)}
+                        to="/">
+                        <Button 
+                            className={classNames(`text-blue-500 border-blue-500 py-2.5 px-4`)}
+                            variant="outlined">
+                            Go to portfolio
+                        </Button>
+                    </Link>
                 </div>
             </section>
         </main>
