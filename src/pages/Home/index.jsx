@@ -3,11 +3,22 @@ import { useStyles } from './styles'
 import { useGlobalStyles } from '../../styles'
 import { Link } from 'react-router-dom'
 import { useCallback } from 'react';
-import { Typography } from '@mui/material';
+import { Hidden, Typography } from '@mui/material';
+import heroIllustrationImage from '../../assets/images/homepage/mobile/image-homepage-profile.jpg'
 
 const Home = () => {
     const classes = useStyles();
     const globalStyles = useGlobalStyles();
+
+    const Image = ({ src }) => (
+        <div className={classNames(classes.aboutMeImageContainer)}>
+            <img 
+                alt="Alex Spencer"
+                className={classNames(`block h-full w-full`)}
+                src={src}
+            />
+        </div>
+    );
     
     return (
         <main className={classNames(globalStyles.px)}>
@@ -34,6 +45,11 @@ const Home = () => {
                         <span className={classNames(`grow text-center`)}>About me</span>
                     </Link>
                 </div>
+            </section>
+            <section className={classNames(`py-16`)}>
+                <Hidden smUp>
+                    <Image src={heroIllustrationImage} />
+                </Hidden>
             </section>
         </main>
     )

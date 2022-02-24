@@ -33,5 +33,8 @@ export const useStyles = makeStyles(theme => ({
         backgroundSize: 25,
         height: 45,
         width: 45
+    },
+    aboutMeImageContainer: {
+        //height: 270
     }
 }))
