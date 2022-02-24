@@ -92,6 +92,22 @@ const Home = () => {
                     </Link>
                 </div>
             </section>
+            <section className={classNames(`flex flex-col items-center pb-16`)}>
+                <Typography 
+                    className={classNames(`font-bold text-center text-blue-500 text-3xl sm:mt-0`)}
+                    component="h2">
+                    Interested in doing a project together?
+                </Typography>
+                <Link 
+                    className={classNames(`mt-6 inline-block`)}
+                    to="/">
+                    <Button 
+                        className={classNames(`text-blue-500 border-blue-500 py-2.5 px-4`)}
+                        variant="outlined">
+                        Contact me
+                    </Button>
+                </Link>
+            </section>
         </main>
     )
 };
