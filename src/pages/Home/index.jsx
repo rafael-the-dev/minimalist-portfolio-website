@@ -48,7 +48,8 @@ const Home = () => {
                     </Link>
                 </div>
             </section>
-            <section className={classNames(`py-16 sm:flex sm:items-stretch sm:justify-between`)}>
+            <section className={classNames(`py-16 sm:flex sm:items-stretch sm:justify-between md:justify-start
+                md:py-20 lg:py-32`)}>
                 <Hidden smUp>
                     <Image src={heroIllustrationImage} />
                 </Hidden>

@@ -41,6 +41,12 @@ export const useStyles = makeStyles(theme => ({
         },
         [theme.breakpoints.up(724)]: {
             width: 289
+        },
+        [theme.breakpoints.up('md')]: {
+            width: 381
+        },
+        [theme.breakpoints.up(1100)]: {
+            width: 418
         }
     },
     aboutMeContent: {
@@ -51,6 +57,14 @@ export const useStyles = makeStyles(theme => ({
         [theme.breakpoints.up(679)]: {
             flexGrow: 1,
             marginLeft: '4rem'
+        },
+        [theme.breakpoints.up(1000)]: {
+            flexGrow: 0,
+            width: '43%'
+        },
+        [theme.breakpoints.up(1100)]: {
+            marginLeft: '7rem',
+            width: 300
         }
     },
     aboutMeDivider: {
