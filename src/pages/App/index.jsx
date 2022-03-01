@@ -9,6 +9,7 @@ const App = () => {
     const HomePage = loadable(() => import(/* webpackChunkName: "HomePage" */ '../Home'));
     const Header = loadable(() => import(/* webpackChunkName: "Header" */ '../../components/Header'));
     const Footer = loadable(() => import(/* webpackChunkName: "Footer" */ '../../components/Footer'));
+    const ProjectDetailsPage = loadable(() => import(/* webpackChunkName: "ProjectDetails" */ '../ProjectDetails'));
 
     return (
         <>
@@ -18,6 +19,7 @@ const App = () => {
                         <Header />
                         <Routes>
                             <Route exact path="/" element={<HomePage />} />
+                            <Route exact path="/projects/:id" element={<ProjectDetailsPage />} />
                         </Routes>
                         <Footer />
                     </Router>
