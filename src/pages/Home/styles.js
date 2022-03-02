@@ -70,12 +70,4 @@ export const useStyles = makeStyles(theme => ({
     aboutMeDivider: {
         height: 1
     },
-    contactMeTitle: {
-        [theme.breakpoints.up('sm')]: {
-            maxWidth: '50%'
-        },
-        [theme.breakpoints.up('md')]: {
-            maxWidth: 300
-        }
-    }
 }))

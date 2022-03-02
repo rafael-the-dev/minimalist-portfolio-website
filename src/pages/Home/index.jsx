@@ -7,6 +7,7 @@ import { Button, Divider, Hidden, Typography } from '@mui/material';
 import heroIllustrationImage from '../../assets/images/homepage/mobile/image-homepage-profile.jpg'
 import heroIllustrationTabletImage from '../../assets/images/homepage/tablet/image-homepage-profile.jpg'
 import heroIllustrationDesktopImage from '../../assets/images/homepage/desktop/image-homepage-profile.jpg'
+import ContactSection from '../../components/ContactSection'
 
 const Home = () => {
     const classes = useStyles();
@@ -96,22 +97,7 @@ const Home = () => {
                     </Link>
                 </div>
             </section>
-            <section className={classNames(`flex flex-col items-center pb-16 sm:flex-row sm:justify-between`)}>
-                <Typography 
-                    className={classNames(classes.contactMeTitle, `font-bold text-center sm:text-left text-blue-500 text-3xl sm:mt-0`)}
-                    component="h2">
-                    Interested in doing a project together?
-                </Typography>
-                <Link 
-                    className={classNames(`mt-6 sm:mt-0 inline-block`)}
-                    to="/">
-                    <Button 
-                        className={classNames(`text-blue-500 border-blue-500 py-2.5 px-4`)}
-                        variant="outlined">
-                        Contact me
-                    </Button>
-                </Link>
-            </section>
+            <ContactSection />
         </main>
     )
 };

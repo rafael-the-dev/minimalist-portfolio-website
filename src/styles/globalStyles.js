@@ -5,6 +5,12 @@ export const useGlobalStyles = makeStyles(theme => ({
         paddingLeft: '5%',
         paddingRight: '5%',
     },
+    pxSM: {
+        [theme.breakpoints.up('sm')]: {
+            paddingLeft: '5%',
+            paddingRight: '5%',
+        }
+    },
     brightRed: {
         color: '#F43030'
     },
