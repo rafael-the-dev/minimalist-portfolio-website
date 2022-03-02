@@ -1,7 +1,7 @@
 import classNames from 'classnames'
 import { useStyles } from './styles'
 import { useGlobalStyles } from '../../styles'
-import { Hidden } from '@mui/material';
+import { Grid, Hidden, Typography } from '@mui/material';
 import bookmarkImage from '../../assets/images/portfolio/mobile/image-portfolio-bookmark.jpg'
 import bookmarkTabletImage from '../../assets/images/portfolio/tablet/image-portfolio-bookmark.jpg'
 import bookmarkDesktopImage from '../../assets/images/portfolio/desktop/image-portfolio-bookmark.jpg'
@@ -32,6 +32,28 @@ const ProjectDetails = () => {
             <Hidden mdDown>
                 <Image src={bookmarkDesktopImage} />
             </Hidden>
+            <Grid container>
+                <Grid item xs={12} md={6} component="section">
+                    <div></div>
+                </Grid>
+                <Grid item xs={12} md={6} component="section">
+                    <div>
+                        <Typography 
+                            className={classNames(`font-bold`)}
+                            component="h1" 
+                            variant="h6">
+                            Manage
+                        </Typography>
+                        <Typography 
+                        className={classNames(`text-sm leading-7 text-blue-500 mt-4`)}
+                        component="p">
+                        This project required me to build a fully responsive landing page to the 
+                        designs provided. I used HTML5, along with CSS Grid and JavaScript for 
+                        the areas that required interactivity, such as the testimonial slider.
+                        </Typography>
+                    </div>
+                </Grid>
+            </Grid>
             <ContactSection />
         </main>
     );
