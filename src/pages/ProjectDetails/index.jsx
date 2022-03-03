@@ -1,11 +1,12 @@
 import classNames from 'classnames'
 import { useStyles } from './styles'
 import { useGlobalStyles } from '../../styles'
-import { Grid, Hidden, Typography } from '@mui/material';
+import { Button, Grid, Hidden, Typography } from '@mui/material';
 import bookmarkImage from '../../assets/images/portfolio/mobile/image-portfolio-bookmark.jpg'
 import bookmarkTabletImage from '../../assets/images/portfolio/tablet/image-portfolio-bookmark.jpg'
 import bookmarkDesktopImage from '../../assets/images/portfolio/desktop/image-portfolio-bookmark.jpg'
 import ContactSection from '../../components/ContactSection'
+import { Link } from 'react-router-dom'
 
 const ProjectDetails = () => {
     const classes = useStyles();
@@ -32,7 +33,7 @@ const ProjectDetails = () => {
             <Hidden mdDown>
                 <Image src={bookmarkDesktopImage} />
             </Hidden>
-            <Grid container className={classNames(`md:justify-between`)}>
+            <Grid container className={classNames(`mb-12 md:justify-between`)}>
                 <Grid item xs={12} md={4} component="section">
                     <div>
                         <Typography 
@@ -42,12 +43,21 @@ const ProjectDetails = () => {
                             Manage
                         </Typography>
                         <Typography 
-                        className={classNames(`text-sm leading-7 text-blue-500 mt-4`)}
-                        component="p">
-                        This project required me to build a fully responsive landing page to the 
-                        designs provided. I used HTML5, along with CSS Grid and JavaScript for 
-                        the areas that required interactivity, such as the testimonial slider.
+                            className={classNames(`text-sm leading-7 text-blue-500 mt-4`)}
+                            component="p">
+                            This project required me to build a fully responsive landing page to the 
+                            designs provided. I used HTML5, along with CSS Grid and JavaScript for 
+                            the areas that required interactivity, such as the testimonial slider.
                         </Typography>
+                        <Link 
+                            className={classNames(`mt-6 inline-block`)}
+                            to="/">
+                            <Button 
+                                className={classNames(`text-blue-500 border-blue-500 py-2.5 px-4`)}
+                                variant="outlined">
+                                Visite website
+                            </Button>
+                        </Link>
                     </div>
                 </Grid>
                 <Grid item xs={12} md={8} component="section" className={classNames(classes.rightSide)}>
