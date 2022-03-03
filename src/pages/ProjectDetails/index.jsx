@@ -32,7 +32,7 @@ const ProjectDetails = () => {
             <Hidden mdDown>
                 <Image src={bookmarkDesktopImage} />
             </Hidden>
-            <Grid container>
+            <Grid container className={classNames(`md:justify-between`)}>
                 <Grid item xs={12} md={4} component="section">
                     <div>
                         <Typography 
@@ -50,7 +50,7 @@ const ProjectDetails = () => {
                         </Typography>
                     </div>
                 </Grid>
-                <Grid item xs={12} md={8} className={classNames(classes.rightSide)}>
+                <Grid item xs={12} md={8} component="section" className={classNames(classes.rightSide)}>
                     <div>
                         <Typography 
                             className={classNames(`font-bold`)}
