@@ -55,7 +55,7 @@ const ProjectDetails = () => {
                             <Button 
                                 className={classNames(`text-blue-500 border-blue-500 py-2.5 px-4`)}
                                 variant="outlined">
-                                Visite website
+                                Visit website
                             </Button>
                         </Link>
                     </div>
