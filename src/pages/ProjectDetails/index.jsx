@@ -12,11 +12,11 @@ const ProjectDetails = () => {
     const classes = useStyles();
     const globalStyles = useGlobalStyles();
 
-    const Image = ({ src }) => (
+    const Image = ({ className, src }) => (
         <div className={classNames(classes.heroImage, `mb-12`)}>
             <img 
                 alt="Alex Spencer"
-                className={classNames(`block h-full w-full`)}
+                className={classNames(className, `block h-full w-full`)}
                 src={src}
             />
         </div>
@@ -73,6 +73,8 @@ const ProjectDetails = () => {
                         component="p">
                         This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.
                         </Typography>
+                        <Image src={bookmarkImage} className={classes.staticImages} />
+                        <Image src={bookmarkImage} className={classes.staticImages} />
                     </div>
                 </Grid>
             </Grid>
