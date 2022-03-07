@@ -91,21 +91,25 @@ const ProjectDetails = () => {
                 </Grid>
             </Grid>
             <div className={classNames(`flex items-stretch border-y border-solid border-blue-500
-                mb-8`)}>
-                <Link to="/" className={classNames(`flex flex-col w-1/2 py-6`)}>
-                    <ArrowBackIosIcon className={classNames(`opacity-90 mb-2`)} />
-                    <span className={classNames('text-3xl text-blue-500')}>Insure</span>
-                    <span className={classNames('text-base text-blue-500 capitalize opacity-90 mt-2')}>
-                        Previous project
-                    </span>
+                mb-12`)}>
+                <Link to="/" className={classNames(`flex flex-col sm:flex-row sm:items-center w-1/2 py-6`)}>
+                    <ArrowBackIosIcon className={classNames(`opacity-90 mb-2 sm:mb-0 sm:mr-3`)} />
+                    <div className={classNames(`flex flex-col`)}>
+                        <span className={classNames('text-3xl text-blue-500 md:font-medium')}>Insure</span>
+                        <span className={classNames('text-base text-blue-500 capitalize opacity-90 mt-2')}>
+                            Previous project
+                        </span>
+                    </div>
                 </Link>
-                <Link to="/" className={classNames(`flex flex-col items-end w-1/2 border-l  py-6
-                    border-solid border-blue-500`)}>
-                    <ArrowForwardIosIcon className={classNames(`opacity-90 mb-2`)} />
-                    <span className={classNames('text-3xl text-blue-500')}>Manage</span>
-                    <span className={classNames('text-base text-blue-500 capitalize opacity-90 mt-2')}>
-                        Next project
-                    </span>
+                <Link to="/" className={classNames(`flex flex-col sm:flex-row-reverse sm:items-center items-end 
+                    w-1/2 border-l  py-6 border-solid border-blue-500`)}>
+                    <ArrowForwardIosIcon className={classNames(`opacity-90 mb-2 sm:mb-0 sm:ml-3`)} />
+                    <div className={classNames(`flex flex-col`)}>
+                        <span className={classNames('text-3xl text-blue-500 md:font-medium')}>Manage</span>
+                        <span className={classNames('text-base text-blue-500 capitalize opacity-90 mt-2 sm:text-right')}>
+                            Next project
+                        </span>
+                    </div>
                 </Link>
             </div>
             <ContactSection />
