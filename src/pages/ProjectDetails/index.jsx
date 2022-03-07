@@ -35,9 +35,9 @@ const ProjectDetails = () => {
             <Hidden mdDown>
                 <Image src={bookmarkDesktopImage} />
             </Hidden>
-            <Grid container className={classNames(`mb-12 md:justify-between`)}>
+            <Grid container className={classNames(`mb-12 md:pt-12 md:justify-between`)}>
                 <Grid item xs={12} md={4} component="section">
-                    <div>
+                    <div className={classNames(`md:border-t border-solid border-blue-500 md:pt-12`)}>
                         <Typography 
                             className={classNames(`font-bold`)}
                             component="h1" 
@@ -73,7 +73,7 @@ const ProjectDetails = () => {
                     </div>
                 </Grid>
                 <Grid item xs={12} md={8} component="section" className={classNames(classes.rightSide)}>
-                    <div className={classNames(`pt-12`)}>
+                    <div className={classNames(`pt-12 md:pt-0`)}>
                         <Typography 
                             className={classNames(`font-bold`)}
                             component="h2" 
