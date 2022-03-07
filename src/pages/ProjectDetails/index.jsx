@@ -7,6 +7,8 @@ import bookmarkTabletImage from '../../assets/images/portfolio/tablet/image-port
 import bookmarkDesktopImage from '../../assets/images/portfolio/desktop/image-portfolio-bookmark.jpg'
 import ContactSection from '../../components/ContactSection'
 import { Link } from 'react-router-dom'
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const ProjectDetails = () => {
     const classes = useStyles();
@@ -88,6 +90,24 @@ const ProjectDetails = () => {
                     </div>
                 </Grid>
             </Grid>
+            <div className={classNames(`flex items-stretch border-y border-solid border-blue-500
+                mb-8`)}>
+                <Link to="/" className={classNames(`flex flex-col w-1/2 py-6`)}>
+                    <ArrowBackIosIcon className={classNames(`opacity-90 mb-2`)} />
+                    <span className={classNames('text-3xl text-blue-500')}>Insure</span>
+                    <span className={classNames('text-base text-blue-500 capitalize opacity-90 mt-2')}>
+                        Previous project
+                    </span>
+                </Link>
+                <Link to="/" className={classNames(`flex flex-col items-end w-1/2 border-l  py-6
+                    border-solid border-blue-500`)}>
+                    <ArrowForwardIosIcon className={classNames(`opacity-90 mb-2`)} />
+                    <span className={classNames('text-3xl text-blue-500')}>Manage</span>
+                    <span className={classNames('text-base text-blue-500 capitalize opacity-90 mt-2')}>
+                        Next project
+                    </span>
+                </Link>
+            </div>
             <ContactSection />
         </main>
     );
