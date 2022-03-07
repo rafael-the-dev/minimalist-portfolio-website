@@ -23,7 +23,7 @@ const ProjectDetails = () => {
     );
 
     return (
-        <main  className={classNames(globalStyles.pxSM)}>
+        <main  className={classNames(globalStyles.px)}>
             <Hidden smUp>
                 <Image src={bookmarkImage} />
             </Hidden>
@@ -49,6 +49,16 @@ const ProjectDetails = () => {
                             designs provided. I used HTML5, along with CSS Grid and JavaScript for 
                             the areas that required interactivity, such as the testimonial slider.
                         </Typography>
+                        <Typography 
+                            className={classNames(`text-sm leading-7 text-cyan-700 font-semibold mt-4`)}
+                            component="p">
+                            Interaction Design / Front End Development
+                        </Typography>
+                        <Typography 
+                            className={classNames(`text-sm leading-7 text-cyan-700 font-semibold mt-2`)}
+                            component="p">
+                            HTML / CSS
+                        </Typography>
                         <Link 
                             className={classNames(`mt-6 inline-block`)}
                             to="/">
@@ -61,7 +71,7 @@ const ProjectDetails = () => {
                     </div>
                 </Grid>
                 <Grid item xs={12} md={8} component="section" className={classNames(classes.rightSide)}>
-                    <div>
+                    <div className={classNames(`pt-12`)}>
                         <Typography 
                             className={classNames(`font-bold`)}
                             component="h2" 
@@ -69,7 +79,7 @@ const ProjectDetails = () => {
                             Project Background
                         </Typography>
                         <Typography 
-                        className={classNames(`text-sm leading-7 text-blue-500 mt-4`)}
+                        className={classNames(`text-sm leading-7 text-blue-500 mt-4 mb-8`)}
                         component="p">
                         This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.
                         </Typography>
